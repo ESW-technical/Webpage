@@ -366,6 +366,20 @@ section{
   font-size: 1.5rem;
 }
 
+.logos{
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos .logo{
+  width: 15rem;
+  height: 10rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(52deg) brightness(102%) contrast(104%);
+
+
+}
 
 /* media queries */
 @media screen and (max-width: 991px) {
