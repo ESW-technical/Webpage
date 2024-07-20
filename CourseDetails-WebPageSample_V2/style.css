@@ -219,6 +219,13 @@ button:hover {
     font-size: 1.3rem;
 }
 
+.instructor-text a{
+    margin-top: 1rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
 .syllabus-box {
     background-color: var(--light-pink);
     padding: 20px;
