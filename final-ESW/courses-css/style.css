@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --purple:#9e329e;
+    --blue: #008cff;
+    --blue-button:#37a5ff;
+    --white:#fff;
+    --light-white:#aaa;
+    --black:black;
+    --light-bg:rgb(24, 23, 23);
+    --light-pink : #FFE0E9;
+}
+
+*{
+    font-family: "Rubik", sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear; 
+    text-transform: capitalize;
+}
+
+*::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue-button);
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0; 
+    z-index: 1000;
+    background-color: var(--light-bg);
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.header .flex .logo img{
+    width: 7rem;
+}
+
+.header .flex .navbar a{
+    margin-left: 3rem;
+    color: var(--light-white);
+    font-size: 2rem;
+}
+
+.header .flex .navbar a:hover{
+    color: var(--blue-button);
+    text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+}
+
+#menu-btn {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2.5rem;
+    display: none;
+}
+
+.course-details {
+    text-align: center;
+    padding-top: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+   
+}
+
+.course-name-box {
+    background-color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.course-image {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, var(--blue), var(--purple), pink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 2rem;
+}
+
+
+.info-box {
+    background-color: var(--light-pink);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-item {
+    align-items: center;
+    display: flex;
+}
+
+.info-icon {
+    max-width: 40px;
+    margin-left: 8px;
+}
+
+.info-icon-laptop {
+    max-width: 50px;
+    margin-left: 8px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.info-item .label {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 7px;
+}
+.info-item .value {
+    font-size: 1.2rem;
+}
+
+.enroll-box {
+    padding-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+button {
+    background-color: #ad0000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 1rem;
+    width: 20rem;
+}
+
+button:hover {
+    background-color: #8c0000;
+}
+
+.instructor-box {
+    background-color: var(--light-pink);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.instructor-image {
+    width: 125px; 
+    height: 125px; 
+    border-radius: 50%; 
+    margin-bottom: 0px;
+    object-fit: cover; 
+}
+
+.instructor-text {
+    text-align: center;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.instructor-box h3 {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+
+.instructor-box p {
+    font-size: 1.3rem;
+}
+
+.instructor-text a{
+    margin-top: 1rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.syllabus-box {
+    background-color: var(--light-pink);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.syllabus-box h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.syllabus-box ul {
+    list-style-type:decimal;
+    padding-right: 20px;
+}
+
+.syllabus-box li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.about-box {
+    background-color: var(--light-pink);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.time-box{
+        background-color: var(--light-pink);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.time-box h3{
+    text-align: right;
+    font-size: 1.7rem;
+}
+
+.time-box .timetable{
+    margin: 2rem;
+    padding: auto;
+}
+
+.time-box .timetable th, td{
+    border: solid black;
+    padding:1rem;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.time-box p{
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.suggestion{
+    background: linear-gradient(to right, var(--blue), var(--purple), pink);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.suggestion p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.suggestion .suggestion-title{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    
+}
+
+.about-text {
+    text-align: right;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.about-box h3 {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+
+.about-box p {
+    font-size: 1.3rem;
+}
+
+.required-box {
+    background-color: var(--light-pink);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.required-box h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.required-box ul {
+    list-style-type:disc;
+    padding-right: 20px;
+}
+
+.required-box li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer{
+    background-color: var(--light-bg);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer .follow a{
+    margin: 0 .3rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.footer .follow a:hover{
+    background-color: linear-gradient(to right, var(--blue) , var(--purple));
+    
+}
+
+.footer .credit{
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    padding: 2rem;
+    border-top: .1rem solid var(--light-white);
+    font-size: 2rem;
+    color: var(--light-white);
+}
+
+.comment{
+    color:var(--white);
+    font-size: 1.5rem;
+  }
+
+  
+.logos{
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.logos .logo{
+    width: 10rem;
+    height: 10rem;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(52deg) brightness(102%) contrast(104%);
+}  
+.logos .logo-esw{
+    width: 10rem;
+    height: 5rem;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(52deg) brightness(102%) contrast(104%);
+}  
+ 
+@media (max-width: 600px) {
+
+    .text-content {
+        font-size: 1.7rem;
+    }    
+
+    .course-image {
+        max-width: 140px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }    
+
+    .info-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        margin-bottom: 20px;
+    }
+
+    /* .info-icon, .info-icon {
+        max-width: 40px;
+    }
+
+    .info-icon, .info-icon-laptop {
+        max-width: 30px;
+    } */
+
+    .info-text {
+        flex-direction: row;
+    }
+
+    .info-item .label {
+        /* font-size: 1.2rem; */
+        margin-left: 10px;
+    }
+/* 
+    .info-item .value {
+        font-size: 1rem;
+    } */
+}
